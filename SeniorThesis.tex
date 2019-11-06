@@ -139,24 +139,25 @@ You should first modify the documents in the preamble, things that appear before
 
 The main text of the proposal should be stored in the ``SeniorThesis.tex'' document. The following descriptions are sections that must be included in the thesis document.
 
+\textbf{Bibliography}: The bibliography should include all references cited in the text (as \cite{dasgupta2015comrade}) and it should not include references that have not been cited. ACM referencing style should be used when preparing the bibliography. We recommend using BibTeX or BibLaTeX and using the file \texttt{preamble/bibliography.bib}.
 
 %----------------------------------------------------------------------------------------
 % STOP DELETE
 %----------------------------------------------------------------------------------------
 
-\numberedchapter{Introduction} % Title of the numbered chapter
+%\numberedchapter{Introduction} % Title of the numbered chapter
 \input{chapters/ch01_introduction} % Introduction (first numbered chapter)
 
-\numberedchapter{Related Work}
+%\numberedchapter{Related Work}
 \input{chapters/ch02_relatedwork}
 
-\numberedchapter{Method Of Approach}
+%\numberedchapter{Method Of Approach}
 \input{chapters/ch03_method}
 
-\numberedchapter{Experimental Results}
+%\numberedchapter{Experimental Results}
 \input{chapters/ch04_experiments}
 
-\numberedchapter{Conclusion}
+%\numberedchapter{Conclusion}
 \input{chapters/conclusion}
 
  
@@ -166,7 +167,6 @@ The main text of the proposal should be stored in the ``SeniorThesis.tex'' docum
 
 \addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
 \unnumberedchapter{Bibliography} % Title of the unnumbered chapter
-\textbf{Bibliography}: The bibliography should include all references cited in the text (as \cite{dasgupta2015comrade}) and it should not include references that have not been cited. ACM referencing style should be used when preparing the bibliography. We recommend using BibTeX or BibLaTeX and using the file \texttt{preamble/bibliography.bib}.
 \bibliography{preamble/bibliography} % The references information are stored in the file named "bibliography.bib"
 
 
